@@ -1,0 +1,707 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #776577;
+  padding-bottom: 100px;
+}
+
+.main {
+  width: 900px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 40px 5px #ccc7c7;
+          box-shadow: 0px 0px 40px 5px #ccc7c7;
+  border-radius: 10px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 100px;
+}
+
+.letsGetStarted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  color: #756c6c;
+}
+
+.tagline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  color: #756c6c;
+  font-size: 21px;
+  font-style: italic;
+}
+
+.connection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 900px;
+  padding-bottom: 60px;
+}
+
+.account {
+  position: relative;
+  width: calc( 100% / 3);
+  padding-bottom: 140px;
+}
+
+.address {
+  width: 300px;
+  padding-bottom: 140px;
+}
+
+.addressHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 80px;
+  color: #ffffff;
+  background: #0bb819a6;
+}
+
+.payment {
+  width: 300px;
+  background: #9f7aa7;
+  position: relative;
+}
+
+.payment::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: 0;
+  width: 21px;
+  height: 100%;
+  background: #9f7aa7;
+}
+
+.paymentHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 300px;
+  height: 80px;
+  color: #ffffff;
+  position: relative;
+}
+
+.paymentHeader::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  border-left: 20px solid #5a405f;
+  border-right: 0px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 0px solid transparent;
+}
+
+.paymentHeader span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 260px;
+  height: 100%;
+  border-bottom: 5px dotted white;
+}
+
+.accountHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 315px;
+  height: 80px;
+  right: 15px;
+  background-color: #ee8b2e;
+  color: #5d5454;
+  position: relative;
+}
+
+.accountHeader:before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  border-left: 10px solid transparent;
+  border-right: 15px solid #ca7d35;
+  border-top: 20px solid transparent;
+  border-bottom: 0px solid transparent;
+}
+
+.accountHeader,
+.addressHeader,
+.paymentHeader {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.accountFormItem {
+  padding-top: 20px;
+}
+
+.accountRightBorder {
+  border-right: 4px dotted #9f7aa7;
+  width: 100%;
+}
+
+.getData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 15px 0 15px;
+}
+
+.accountLabelContainer {
+  color: #ca7d35;
+  font-size: 18px;
+}
+
+.accountInputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.accountInputContainer label {
+  color: #756c6c;
+  text-align: center;
+}
+
+.accountInputContainer input {
+  padding: 3px;
+  border: 1px solid #756c6c;
+}
+
+.accountCheckboxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.accountCheckboxContainer label {
+  margin-left: 10px;
+}
+
+.smallSeparator {
+  padding-top: 20px;
+}
+
+.largeSeparator {
+  padding: 20px;
+}
+
+.addressTextareaContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 40px;
+}
+
+.addressTextarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+.addressTextarea label {
+  color: #756c6c;
+  text-align: center;
+  font-size: 14px;
+}
+
+.addressLabelContainer {
+  color: #0bb819a6;
+  font-size: 18px;
+}
+
+.paymentFormItem {
+  padding-top: 40px;
+}
+
+.paymentInputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+}
+
+.paymentInputContainer select {
+  width: 100%;
+  padding: 5px;
+}
+
+.paymentInputContainer input {
+  padding: 5px;
+}
+
+.paymentInputContainer input[name='CVS'] {
+  width: 50px;
+}
+
+.paymentLabelContainer {
+  width: 35%;
+}
+
+.paymentLabelContainer label {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.selectDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.selectDate select[name='Day'] {
+  margin-right: 10px;
+}
+
+.nine {
+  border-bottom: 2px solid #ca7d35;
+}
+
+.montlyChargeContainer {
+  padding: 20px;
+}
+
+.montlyCharge {
+  border-bottom: 2px dotted #ffffff;
+  padding-bottom: 5px;
+}
+
+.montlyCharge h3 {
+  padding-right: 10px;
+  color: #fff;
+  font-style: italic;
+}
+
+.montlyCharge span,
+.montlyCharge sup {
+  color: #ca7d35;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.montlyCharge div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.termsAndCondition {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.termsAndCondition a {
+  color: #fff;
+}
+
+.buttonSignupContainer {
+  padding-left: 20px;
+}
+
+.signup {
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 10px 25px;
+  background-color: #37e004;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main {
+    width: 80%;
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .letsGetStarted {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .tagline {
+    width: 100%;
+    text-align: center;
+  }
+  .addressHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 80px;
+    right: 7px;
+    background-color: #0bb819;
+    color: #5d5454;
+    position: relative;
+  }
+  .connection {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .address {
+    padding-bottom: 40px;
+    padding-bottom: 40px;
+  }
+  .accountHeader,
+  .addressHeader,
+  .paymentHeader {
+    right: 0;
+    width: calc( 100% + 30px);
+  }
+  .accountHeader:after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    border-left: 15px solid #ca7d35;
+    border-right: 10px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+  }
+  .accountHeader:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    border-left: 10px solid transparent;
+    border-right: 15px solid #ca7d35;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+  }
+  .account,
+  .payment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .accountRightBorder {
+    border: none;
+  }
+  .accountFormItem,
+  .addressTextareaContainer {
+    width: 80%;
+  }
+  .getData label,
+  .addressTextareaContainer label {
+    font-size: 23px;
+  }
+  .getData input,
+  .addressTextareaContainer input {
+    padding: 10px 25px;
+  }
+  .accountCheckboxContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .accountInputContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .address,
+  .addressTextareaContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  .addressHeader:after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    border-left: 15px solid #19571efb;
+    border-right: 10px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+  }
+  .addressHeader:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    border-left: 10px solid transparent;
+    border-right: 15px solid #19571efb;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+  }
+  .paymentHeader:after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    border-left: 20px solid #6d5a72;
+    border-right: 10px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+  }
+  .paymentHeader:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -15px;
+    border-left: 10px solid transparent;
+    border-right: 20px solid #6d5a72;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+  }
+  .payment:before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 21px;
+    height: 100%;
+    background: #9f7aa7;
+  }
+  .payment {
+    -webkit-box-shadow: 1px 1px 10px #5e4364;
+            box-shadow: 1px 1px 10px #5e4364;
+  }
+  .payment input {
+    width: 100%;
+  }
+  .paymentInputContainer input[name='CVS'] {
+    width: 30%;
+  }
+  .buttonSignupContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .signup {
+    padding: 20px 40px;
+  }
+  .signup:hover {
+    background-color: #47cf1e;
+    -webkit-box-shadow: 1px 1px 10px #5e4364;
+            box-shadow: 1px 1px 10px #5e4364;
+  }
+  .montlyCharge {
+    font-size: 24px;
+  }
+  .montlyCharge span,
+  .montlyCharge sup {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .getData {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .accountInputContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .accountCheckboxContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .paymentLabelContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .montlyCharge {
+    border: 4px dotted #ffffff;
+  }
+  .montlyCharge div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .paymentInputContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
